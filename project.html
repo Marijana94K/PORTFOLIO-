@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    .gridbox{
+    position: relative;
+	display:grid;
+	grid-template-columns:repeat(auto-fill,minmax(220px, 5fr));
+	grid-gap:10px;
+	justify-content: center;
+    align-items:space-around;
+    z-index: 1;
+    padding: 100px;
+    }
+
+    .box{
+    display:flex;
+    flex-direction: column;
+    position: relative;
+    cursor: pointer;
+    margin: 10px;
+    background:rgba(255, 255, 255, 0.3);
+    border-top:1px solid rgba(255, 255, 255, 0.5);
+    border-left:1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s linear;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    -moz-backdrop-filter: blur(5px);
+    z-index: 1;
+    }
+    .box:hover{
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+.box p{
+    display:block;
+    position: relative;
+    width: 100%;
+    margin: auto;
+    color:rgb(10, 2, 22);;
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color:#fff;
+}
+
+.box img{
+    max-width: 0;
+    border-radius: 10px;
+}
+.box i{
+    font-size:10px;
+    background: transparent;
+}
+.box:hover img{
+    max-width: 100%;
+    border-radius: 10px;
+    
+}
+.box:hover i{
+    display:none;
+}
+.box .title{
+    width:100%;
+    background:rgba(0, 0, 0, 0.7);
+    border-radius: 0 0 15px 15px;
+    padding: 6px 0;   
+}
+.box:hover .title{
+    display:none;
+}
+.box .buttons{
+    display: none;
+    width:100%;
+    background:rgba(0, 0, 0, 0.7);
+    border-radius: 0 0 15px 15px;
+    padding: 7px 0;
+}
+.box .buttons a{
+    text-decoration: none;
+    color:inherit;
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin: 3px;
+}
+.box .buttons a:hover{
+    background: #444;
+    color:white;
+    border: 1px solid #444;
+}
+.box:hover .buttons{
+    display:block;
+}
+
+h2 {
+    font-family: sans-serif;
+    font-style: oblique;
+    text-align: center;
+    color: gray;
+    margin-top: 150px;
+    text-shadow: 2px 2px 5px red;
+    font-size: 50px;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(white, black); 
+    
+}
+a {
+text-decoration: none;
+background-color: #252120;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  margin-left: 10px;
+  padding: 10px;
+  }
+
+  a:hover {
+      background-color:rgba(156, 156, 156, 0.966);
+      
+  }
+</style>
+<body>
+   
+
+    <h2>Github Projects</h2>
+   
+   <div class="gridbox">
+
+
+<div class="box"><img src="./index/index.html" alt=""><div class="title"><i class="fas fa-sort-up"></i><p>Site</p></div><div class="buttons"><a href="https://marijana94k.github.io/site/home.html">WEBSITE</a><a href="https://github.com/Marijana94K/site">SOURCE</a></div></div>
+<div class="box"><img src="./index/index.html" alt=""><div class="title"><i class="fas fa-sort-up"></i><p>JavaScript</p></div><div class="buttons"><a href="https://marijana94k.github.io/Countdown-Timer/">WEBSITE</a><a href="https://github.com/Marijana94K/Countdown-Timer">SOURCE</a></div></div>
+<div class="box"><img src="./index/index.html" alt=""><div class="title"><i class="fas fa-sort-up"></i><p>Portfolio</p></div><div class="buttons"><a href="https://marijana94k.github.io/Portfolio2/">WEBSITE</a><a href="https://github.com/Marijana94K/Portfolio2">SOURCE</a></div></div>
+<div class="box"><img src="./index/index.html" alt=""><div class="title"><i class="fas fa-sort-up"></i><p>Project Site</p></div><div class="buttons"><a href="https://marijana94k.github.io/projekat/">WEBSITE</a><a href="https://github.com/Marijana94K/projekat">SOURCE</a></div></div>
+<div class="box"><img src="./index/index.html" alt=""><div class="title"><i class="fas fa-sort-up"></i><p>Responsive-gallery1</p></div><div class="buttons"><a href="https://marijana94k.github.io/Responsive-gallery1/">WEBSITE</a><a href="https://github.com/Marijana94K/Responsive-gallery1">SOURCE</a></div></div>
+<div class="box"><img src="./index/index.html" alt=""><div class="title"><i class="fas fa-sort-up"></i><p>Vjezba</p></div><div class="buttons"><a href="https://marijana94k.github.io/vjezba10/index.html">WEBSITE</a><a href="https://github.com/Marijana94K/vjezba10">SOURCE</a></div></div>
+<div class="box"><img src="./index/index.html" alt=""><div class="title"><i class="fas fa-sort-up"></i><p>Circle</p></div><div class="buttons"><a href="https://marijana94k.github.io/assigment-number2/">WEBSITE</a><a href="https://github.com/Marijana94K/assigment-number2">SOURCE</a></div></div>
+
+</div>                                                                      
+
+
+<a href="index.html">Back</a>
+</body>
+</html>
